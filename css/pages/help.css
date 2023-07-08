@@ -1,0 +1,77 @@
+#sec_ayuda{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto; /* Altura automática para las filas */
+    gap: 5px; /* Espacio entre los elementos */
+
+}
+
+
+h2{
+    margin-top: 0;
+}
+
+label{
+    font-weight: bold; 
+    font-size: 14px;
+}
+
+#botones {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.espacio{
+    width: 347px;
+}
+
+
+.boton {
+    text-align: center;
+    /* Propiedades de fondo */
+    background-color: #0a574c;
+    color: white;
+  
+    /* Propiedades de borde */
+    border: none;
+    border-radius: 10px;
+  
+    /* Propiedades de tamaño */
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  
+    /* Otras propiedades opcionales */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo cuando se coloca el cursor sobre el botón */
+  .boton:hover {
+    background-color: #45a049;
+  }
+  
+.error{
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-top: 30px;
+    padding: 15px 80px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#success{
+    display: flex;
+    justify-content:center ;
+    margin-top: 30px;
+    color: white;
+    background-color: #28a745;
+    border-radius:15px;
+    padding: 15px 80px;
+}
