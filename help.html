@@ -8,6 +8,11 @@
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/pages/help.css" />
+  <link rel="shortcut icon" href="img/cinema_popcorn.ico" type="image/x-icon">
+  <script src="js/pages/help.js" defer></script>
+  <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">emailjs.init('zMdSe7_TqstqHjQpr')  </script>
 </head>
 
 <body>
@@ -36,27 +41,29 @@
     </section>
     <section id="form-cine_contacto">
       <!-- Sección donde se debe colocar el formulario de contacto-->
-      <form>
+      <form id="form">
         <label for="nombre">Nombre:</label>
         <br>
-        <input type="text" class="espacio" name="nombre"  maxlength="20" required placeholder=""><br/>
+        <input type="text" id="nombre" class="espacio" name="nombre"  maxlength="20" required placeholder=""><br/>
         <label for="Email">Email:</label>
         <br>
-        <input type="text" class="espacio" required placeholder=""><br/>
+        <input type="email" id="email" class="espacio" required placeholder="" oninput="validarEmail()"><br/>
         <label for="Mensaje">Mensaje:</label>
         <br>
-        <textarea name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+        <textarea name="mensaje" id="mensaje" required cols="40" rows="10"></textarea>
         <br>
         <div id="botones">
-          <input type="button" class="boton" value="Limpiar">
-          <input type="submit" class="boton" value="Enviar">
+          <input type="button" class="boton" value="Limpiar" onclick="limpiar()">
+          <input type="submit" id="button" class="boton" value="Enviar" >
         </div>
       </form>
     </section>
     <section id="sec-cine-result"></section>
     <!-- Sección donde se debe mostrar los mensajes de error -->
+    <section id="mensajes"> 
+      
     </section>
-    <p class="error">Ingrese un Email válido</p>
+    
   </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>

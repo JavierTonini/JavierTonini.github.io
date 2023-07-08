@@ -14,15 +14,22 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     width: 100%;
-    max-width: 1000px;
+    
 }
 
-#contenedorPeliculas h3{
+
+
+.contenedorPeliculas h3{
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    color: var(--color-theme);
+    text-shadow: 2px 2px 4px black;
 }
-#contenedorPeliculas p{
+
+
+
+.contenedorPeliculas p{
     font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #77a79d;
@@ -30,14 +37,16 @@ body{
     
 
 }
-#contenedorPeliculas img{
+.contenedorPeliculas img{
     width: 100%;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px ;
 }
 
 .imagen{
-    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px ;
 }
 
 
@@ -50,6 +59,7 @@ body{
     gap: 5px;
 }
 
+
 .boton {
     display: inline-block;
     font-weight: bold; 
@@ -59,20 +69,38 @@ body{
     color: white;
     text-decoration: none;
     border-radius: 20px;
-    border-bottom: 3px solid #333;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid #333; 
     cursor: pointer;
   }
   
-
+  #sec-messages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12px;
+    align-items: center;
+    color: white;
+}
 
 #success{
+    display: flex;
+    justify-content:center ;
     background-color: #28a745;
+    border-radius:15px;
+    padding: 20px 250px;
 }
 #warning{
     background-color: #ffc107;
+    border-radius:15px;
+    padding: 20px 200px;
 }
 #error{
     background-color: #dc3545;
+    border-radius:15px;
+    padding: 20px 50px;
 }
 
 
@@ -87,10 +115,10 @@ body{
     }
     .paginacion button {
     cursor:pointer;
-    padding: 10px 20px;
-    background-color: #45a049;
+    padding: 10px 50px;
+    background-color: #281444;
     color: white;
-    border-radius:5px;
+    border-radius:20px;
     font-family:'sans-serif';
     font-weight: 600;
     transition: .3s ease all;

@@ -27,8 +27,9 @@ label{
 }
 
 .espacio{
-    padding: 5px 85px;
+    width: 347px;
 }
+
 
 .boton {
     text-align: center;
@@ -59,8 +60,18 @@ label{
     background-color: red;
     color: white;
     margin-top: 30px;
-    padding: 15px 40px;
+    padding: 15px 80px;
     font-size: 11px;
     text-decoration: none;
     border-radius: 10px;
+}
+
+#success{
+    display: flex;
+    justify-content:center ;
+    margin-top: 30px;
+    color: white;
+    background-color: #28a745;
+    border-radius:15px;
+    padding: 15px 80px;
 }
